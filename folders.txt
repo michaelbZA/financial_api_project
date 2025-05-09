@@ -1,0 +1,34 @@
+financial_api_project/
+├── .env                      # API keys and configuration (not committed to Git)
+├── .gitignore                # Excludes sensitive files from Git
+├── README.md                 # Project documentation
+├── requirements.txt          # Python dependencies
+├── main.py                   # Entry point for the application
+├── config/
+│   └── settings.py           # Configuration settings
+├── data/
+│   ├── raw/                  # Raw data from APIs
+│   └── processed/            # Cleaned and processed data
+├── src/
+│   ├── __init__.py
+│   ├── api/
+│   │   ├── __init__.py
+│   │   ├── alpha_vantage.py  # Alpha Vantage API client
+│   │   └── yahoo_finance.py  # Yahoo Finance API client
+│   ├── data_processing/
+│   │   ├── __init__.py
+│   │   ├── cleaning.py       # Data cleaning functions
+│   │   └── analysis.py       # Data analysis functions
+│   ├── visualization/
+│   │   ├── __init__.py
+│   │   ├── charts.py         # Chart generation
+│   │   └── dashboard.py      # Dashboard component
+│   └── utils/
+│       ├── __init__.py
+│       ├── logger.py         # Logging configuration
+│       └── helpers.py        # Helper functions
+└── tests/
+    ├── __init__.py
+    ├── test_api.py
+    ├── test_data_processing.py
+    └── test_visualization.py
